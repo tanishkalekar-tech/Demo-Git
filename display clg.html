@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVPIT College</title>
+
+    <style>
+        :root {
+            --navy: #12304a;
+            --blue: #1f6682;
+            --mint: #eaf6f3;
+            --paper: #f7fbfa;
+            --ink: #203943;
+            --line: #c7dedb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 28px 20px 48px;
+            background: linear-gradient(180deg, var(--mint), var(--paper) 360px);
+            color: var(--ink);
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        main {
+            width: min(860px, 100%);
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 24px 16px;
+            border-radius: 18px;
+            background: var(--navy);
+            color: white;
+            text-align: center;
+            font-size: clamp(2rem, 6vw, 3rem);
+            letter-spacing: 0.06em;
+        }
+
+        .welcome {
+            margin: 22px 0;
+            color: var(--blue);
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .college-image {
+            display: block;
+            width: 250px;
+            max-width: 100%;
+            height: auto;
+            margin: 24px auto;
+            padding: 6px;
+            border: 3px solid var(--line);
+            border-radius: 14px;
+            background: white;
+            box-shadow: 0 8px 22px #12304a1a;
+        }
+
+        .website-link {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 32px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            background: var(--blue);
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .website-link:hover,
+        .website-link:focus-visible {
+            background: var(--navy);
+        }
+
+        h2 {
+            margin: 0 0 16px;
+            color: var(--navy);
+            text-align: center;
+        }
+
+        .departments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .departments > li {
+            padding: 16px 18px;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 4px 14px #12304a0d;
+            font-weight: 700;
+        }
+
+        .departments > li:last-child {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: min(100%, 410px);
+        }
+
+        .departments ul {
+            margin: 9px 0 0;
+            padding-left: 20px;
+            color: #526a70;
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.65;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>PVPIT College</h1>
+
+        <p class="welcome">
+            Welcome to PVPIT College — a place to learn, explore, and build your future.
+        </p>
+
+        <img
+            class="college-image"
+            src="C:\Users\Tanishq\OneDrive\Pictures\PVPIT.jpg"
+            alt="PVPIT College"
+        >
+
+        <a
+            class="website-link"
+            href="https://pvpittssm.edu.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Visit Official College Website
+        </a>
+
+        <section aria-labelledby="departments-heading">
+            <h2 id="departments-heading">Departments of the College</h2>
+
+            <ul class="departments">
+                <li>
+                    BCA
+                    <ul>
+                        <li>Programming fundamentals</li>
+                        <li>Web and database development</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Civil Engineering
+                    <ul>
+                        <li>Structural engineering</li>
+                        <li>Surveying and construction</li>
+                    </ul>
+                </li>
+
+                <li>
+                    B.Tech
+                    <ul>
+                        <li>Core engineering subjects</li>
+                        <li>Projects and practical learning</li>
+                    </ul>
+                </li>
+
+                <li>
+                    B.Com.
+                    <ul>
+                        <li>Accounting and finance</li>
+                        <li>Business and commerce</li>
+                    </ul>
+                </li>
+
+                <li>
+                    B.Sc.
+                    <ul>
+                        <li>Laboratory-based learning</li>
+                        <li>Foundations in science</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Mechanical Engineering
+                    <ul>
+                        <li>Design and manufacturing</li>
+                        <li>Thermal and machine systems</li>
+                    </ul>
+                </li>
+
+                <li>
+                    ENTC
+                    <ul>
+                        <li>Electronics and circuits</li>
+                        <li>Communication systems</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
